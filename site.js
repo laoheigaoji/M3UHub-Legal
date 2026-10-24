@@ -60,11 +60,16 @@
     var sourceURL = card.dataset.sourceUrl;
     var sourceName = card.dataset.sourceName || "直播源";
     var tubo = card.querySelector(".tubo-button");
+    var tuboBeta = card.querySelector(".tubo-beta-button");
     var m3uhub = card.querySelector(".m3uhub-button");
     var copy = card.querySelector(".copy-button");
 
     if (tubo) {
       tubo.href = "tubo://import?url=" + encodeURIComponent(sourceURL)
+        + "&name=" + encodeURIComponent(sourceName);
+    }
+    if (tuboBeta) {
+      tuboBeta.href = "tubo-beta://import?url=" + encodeURIComponent(sourceURL)
         + "&name=" + encodeURIComponent(sourceName);
     }
     if (m3uhub) {
