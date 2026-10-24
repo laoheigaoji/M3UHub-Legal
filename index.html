@@ -2,55 +2,50 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="M3UHub 隐私政策与使用条款">
-  <title>M3UHub 法律与隐私</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="直播源快捷导入，支持途播和 M3UHub">
+  <title>直播源一键导入</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <header class="site-header">
-    <a class="brand" href="index.html" aria-label="M3UHub 首页">
-      <span class="brand-icon" aria-hidden="true"></span>
-      <span>M3UHub</span>
-    </a>
-  </header>
-
-  <main class="home-main">
-    <section class="intro">
-      <p class="eyebrow">法律与隐私</p>
-      <h1>透明、简明的应用政策</h1>
-      <p>M3UHub 是用于导入和播放用户自有 M3U 频道订阅的工具。应用不提供、托管或销售任何频道和媒体内容。</p>
+<body class="portal-page">
+  <main class="portal-shell">
+    <header class="portal-header">
+      <div><span class="portal-kicker">M3U SUBSCRIPTION</span><h1>直播源一键导入</h1></div>
+      <div class="portal-actions"><a href="privacy.html">隐私</a><a href="terms.html">条款</a></div>
+    </header>
+    <section class="portal-notice" aria-label="使用提示"><span class="notice-icon">✦</span><p>请选择直播源，然后点击对应播放器。请使用 iPhone 的 Safari 浏览器打开，一键导入更快更方便。</p></section>
+    <section class="portal-grid" aria-label="直播源列表">
+      <article class="portal-card source-card" data-source-name="M3UHub专属源" data-source-url="https://tfapp.cn/subscriptions/dianshijia.m3u">
+        <div class="portal-art portal-cover"><span class="portal-badge">M3UHub 专属</span><img src="assets/live-source.png" alt="M3UHub 专属源"></div>
+        <div class="portal-card-body"><div class="portal-buttons portal-buttons-single"><a class="portal-import m3uhub-button" href="#"><b>▶</b><span>导入 M3UHub 专属源</span></a></div></div>
+      </article>
+      <article class="portal-card source-card" data-source-name="备用直播源" data-source-url="http://47.94.6.170/TV/tv.m3u">
+        <div class="portal-art portal-cover"><span class="portal-badge">备用</span><img src="assets/live-source.png" alt="直播源"></div>
+        <div class="portal-card-body"><div class="portal-buttons"><a class="portal-import tubo-button" href="#"><img src="assets/tubo-icon.png" alt=""><span>导入途播</span></a><a class="portal-import m3uhub-button" href="#"><b>▶</b><span>导入 M3UHub</span></a></div></div>
+      </article>
+      <article class="portal-card source-card" data-source-name="MV源" data-source-url="https://static.tripcngo.com/mv.m3u">
+        <div class="portal-art portal-cover"><span class="portal-badge">MV</span><img src="assets/mv-source.png" alt="MV源"></div>
+        <div class="portal-card-body"><div class="portal-buttons"><a class="portal-import tubo-button" href="#"><img src="assets/tubo-icon.png" alt=""><span>导入途播</span></a><a class="portal-import m3uhub-button" href="#"><b>▶</b><span>导入 M3UHub</span></a></div></div>
+      </article>
+      <article class="portal-card source-card" data-source-name="英语儿歌·启蒙动画" data-source-url="https://static.tripcngo.com/index.m3u">
+        <div class="portal-art portal-cover"><span class="portal-badge">启蒙</span><img src="assets/kids-source.png" alt="英语儿歌和启蒙动画"></div>
+        <div class="portal-card-body"><div class="portal-buttons"><a class="portal-import tubo-button" href="#"><img src="assets/tubo-icon.png" alt=""><span>导入途播</span></a><a class="portal-import m3uhub-button" href="#"><b>▶</b><span>导入 M3UHub</span></a></div></div>
+      </article>
     </section>
-
-    <nav class="document-list" aria-label="法律文档">
-      <a href="sources.html">
-        <span>
-          <strong>直播源一键导入</strong>
-          <small>选择直播源，一键添加到途播或 M3UHub</small>
-        </span>
-        <span class="arrow" aria-hidden="true">&#8594;</span>
-      </a>
-      <a href="privacy.html">
-        <span>
-          <strong>隐私政策</strong>
-          <small>我们如何处理本地数据、网络请求和购买信息</small>
-        </span>
-        <span class="arrow" aria-hidden="true">&#8594;</span>
-      </a>
-      <a href="terms.html">
-        <span>
-          <strong>使用条款</strong>
-          <small>使用 M3UHub 时适用的规则、责任和限制</small>
-        </span>
-        <span class="arrow" aria-hidden="true">&#8594;</span>
-      </a>
-    </nav>
+    <section class="portal-guide"><h2>使用方法</h2><div><span>1</span><p>先在 iPhone 上安装途播或 M3UHub。</p></div><div><span>2</span><p>选择直播源，点击对应 App 的导入按钮。</p></div><div><span>3</span><p>跳转到 App 后确认添加，即可在订阅列表中使用。</p></div></section>
+    <footer class="portal-footer"><p>本站仅提供第三方订阅地址的快捷导入入口，不存储、不转播、不审核直播内容。请确保你有权访问和使用所导入的内容。</p><span>最后更新：2026-10-24</span></footer>
   </main>
-
-  <footer>
-    <span>生效日期：2026 年 10 月 7 日</span>
-    <a class="repository-link" href="#">在 GitHub 上联系开发者</a>
-  </footer>
-  <script src="site.js"></script>
+  <button class="portal-refresh" type="button" aria-label="刷新页面" onclick="location.reload()">↻</button>
+  <div class="browser-warning" id="browser-warning" hidden>
+    <div class="browser-warning-backdrop"></div>
+    <section class="browser-warning-card" role="dialog" aria-modal="true" aria-labelledby="browser-warning-title">
+      <span class="browser-warning-label">浏览器提示</span>
+      <h2 id="browser-warning-title">请使用 Safari 浏览器打开</h2>
+      <p>一键导入需要通过 Safari 唤起途播或 M3UHub。当前浏览器可能无法正常跳转，请复制本页地址并在 Safari 中打开。</p>
+      <button type="button" id="copy-page-url">复制本页网址</button>
+      <button class="browser-warning-close" type="button" id="browser-warning-close">我知道了</button>
+    </section>
+  </div>
+  <div class="toast" role="status" aria-live="polite"></div><script src="site.js"></script>
 </body>
 </html>

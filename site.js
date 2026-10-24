@@ -13,6 +13,34 @@
 }());
 
 (function () {
+  var warning = document.getElementById("browser-warning");
+  if (!warning) return;
+
+  var ua = navigator.userAgent || "";
+  var hasSafariEngine = /Safari/i.test(ua);
+  var isOtherBrowser = /(CriOS|FxiOS|EdgiOS|OPiOS|DuckDuckGo|QQBrowser|MQQBrowser|MicroMessenger|Chrome|Chromium|Edg|OPR)/i.test(ua);
+  var isSafari = hasSafariEngine && !isOtherBrowser;
+  if (isSafari) return;
+
+  warning.hidden = false;
+  document.documentElement.classList.add("browser-warning-open");
+
+  var close = document.getElementById("browser-warning-close");
+  var copy = document.getElementById("copy-page-url");
+  if (close) close.addEventListener("click", function () {
+    warning.hidden = true;
+    document.documentElement.classList.remove("browser-warning-open");
+  });
+  if (copy) copy.addEventListener("click", function () {
+    navigator.clipboard.writeText(window.location.href).then(function () {
+      copy.textContent = "网址已复制，请打开 Safari";
+    }).catch(function () {
+      window.prompt("请复制网址并在 Safari 中打开", window.location.href);
+    });
+  });
+}());
+
+(function () {
   var cards = document.querySelectorAll(".source-card[data-source-url]");
   if (!cards.length) return;
 
