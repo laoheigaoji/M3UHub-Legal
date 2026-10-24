@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="直播源快捷导入页面，支持一键导入途播和 M3UHub">
+  <title>直播源一键导入</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="source-page">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="返回 M3UHub 首页">
+      <span class="brand-icon" aria-hidden="true"></span>
+      <span>直播源</span>
+    </a>
+    <a class="header-link" href="index.html">关于 M3UHub</a>
+  </header>
+
+  <main class="source-main">
+    <section class="source-hero">
+      <p class="eyebrow">快速添加</p>
+      <h1>直播源一键导入</h1>
+      <p>选择直播源后，可直接打开途播或 M3UHub 完成添加，无需手动复制和粘贴。</p>
+    </section>
+
+    <section class="source-grid" aria-label="直播源列表">
+      <article class="source-card" data-source-name="精选直播源" data-source-url="https://tfapp.cn/subscriptions/dianshijia.m3u">
+        <div class="source-card-head">
+          <span class="source-number">01</span>
+          <div>
+            <h2>精选直播源</h2>
+            <p>HTTPS 订阅地址</p>
+          </div>
+        </div>
+        <div class="source-address">
+          <code>https://tfapp.cn/subscriptions/dianshijia.m3u</code>
+          <button class="copy-button" type="button">复制</button>
+        </div>
+        <div class="import-actions">
+          <a class="import-button tubo-button" href="#">
+            <span class="button-mark">途</span>
+            <span><strong>导入途播</strong><small>打开途播并添加</small></span>
+          </a>
+          <a class="import-button m3uhub-button" href="#">
+            <span class="button-mark play-mark"></span>
+            <span><strong>导入 M3UHub</strong><small>打开 M3UHub 并添加</small></span>
+          </a>
+        </div>
+      </article>
+
+      <article class="source-card" data-source-name="备用直播源" data-source-url="http://47.94.6.170/TV/tv.m3u">
+        <div class="source-card-head">
+          <span class="source-number">02</span>
+          <div>
+            <h2>备用直播源</h2>
+            <p>HTTP 订阅地址</p>
+          </div>
+        </div>
+        <div class="source-address">
+          <code>http://47.94.6.170/TV/tv.m3u</code>
+          <button class="copy-button" type="button">复制</button>
+        </div>
+        <div class="import-actions">
+          <a class="import-button tubo-button" href="#">
+            <span class="button-mark">途</span>
+            <span><strong>导入途播</strong><small>打开途播并添加</small></span>
+          </a>
+          <a class="import-button m3uhub-button" href="#">
+            <span class="button-mark play-mark"></span>
+            <span><strong>导入 M3UHub</strong><small>打开 M3UHub 并添加</small></span>
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <section class="source-help">
+      <h2>使用说明</h2>
+      <ol>
+        <li>请先在 iPhone 上安装途播或 M3UHub。</li>
+        <li>点击对应播放器的一键导入按钮。</li>
+        <li>系统打开 App 后，根据提示确认添加即可。</li>
+      </ol>
+      <p>本站仅提供订阅地址的快捷导入入口，不存储、不转播也不审核第三方直播内容。直播源可用性及内容由其提供方负责。</p>
+    </section>
+  </main>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+  <footer>
+    <span>请确保你有权访问和使用所导入的内容</span>
+    <a class="repository-link" href="#">联系开发者</a>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>
