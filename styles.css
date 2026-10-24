@@ -391,7 +391,10 @@ footer a { text-decoration: none; }
 .toast.visible { opacity: 1; transform: translate(-50%, 0); }
 
 @media (max-width: 600px) {
-  .portal-buttons-three { grid-template-columns: 1fr; }
+  .portal-buttons-three { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+  .portal-buttons-three .portal-import { min-height: 46px; gap: 5px; padding: 0 5px; border-radius: 10px; font-size: 11px; white-space: nowrap; }
+  .portal-buttons-three .portal-import img { width: 22px; height: 22px; border-radius: 6px; }
+  .portal-buttons-three .portal-import b { width: 22px; height: 22px; border-radius: 6px; font-size: 10px; }
   .site-header,
   main,
   footer { width: min(100% - 32px, 760px); }
