@@ -59,43 +59,10 @@
   cards.forEach(function (card) {
     var sourceURL = card.dataset.sourceUrl;
     var sourceName = card.dataset.sourceName || "直播源";
-    var tubo = card.querySelector(".tubo-button");
-    var tuboBeta = card.querySelector(".tubo-beta-button");
     var m3uhub = card.querySelector(".m3uhub-button");
-    var aptv = card.querySelector(".aptv-copy-button");
-    var cartv = card.querySelector(".cartv-copy-button");
     var copy = card.querySelector(".copy-button");
-
-    if (tubo) {
-      tubo.href = "tubo://import?url=" + encodeURIComponent(sourceURL)
-        + "&name=" + encodeURIComponent(sourceName);
-    }
-    if (tuboBeta) {
-      tuboBeta.href = "tubo-beta://import?url=" + encodeURIComponent(sourceURL)
-        + "&name=" + encodeURIComponent(sourceName);
-    }
     if (m3uhub) {
       m3uhub.href = "m3uhub://subscribe?url=" + encodeURIComponent(sourceURL);
-    }
-    if (cartv) {
-      cartv.addEventListener("click", function (event) {
-        event.preventDefault();
-        navigator.clipboard.writeText(sourceURL).then(function () {
-          showToast("CarTV 订阅链接已复制");
-        }).catch(function () {
-          window.prompt("请复制链接后粘贴到 CarTV", sourceURL);
-        });
-      });
-    }
-    if (aptv) {
-      aptv.addEventListener("click", function (event) {
-        event.preventDefault();
-        navigator.clipboard.writeText(sourceURL).then(function () {
-          showToast("APTV 订阅链接已复制");
-        }).catch(function () {
-          window.prompt("请复制链接后粘贴到 APTV", sourceURL);
-        });
-      });
     }
     if (copy) {
       copy.addEventListener("click", function () {
