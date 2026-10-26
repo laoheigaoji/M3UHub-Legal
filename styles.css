@@ -178,6 +178,8 @@ footer a { text-decoration: none; }
 .portal-buttons { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .portal-buttons-single { grid-template-columns: 1fr; }
 .portal-buttons-three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.portal-buttons-four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.portal-buttons-five { grid-template-columns: repeat(5, minmax(0, 1fr)); }
 .portal-import { min-height: 54px; display: flex; align-items: center; justify-content: center; gap: 9px; color: #fff; border-radius: 12px; text-decoration: none; font-size: 14px; font-weight: 750; transition: transform .15s ease, filter .15s ease; }
 .portal-import:hover { transform: translateY(-2px); filter: brightness(1.08); }
 .portal-import b { width: 28px; height: 28px; display: grid; place-items: center; background: rgba(255,255,255,.16); border-radius: 8px; }
@@ -329,6 +331,8 @@ footer a { text-decoration: none; }
 .tubo-button { background: linear-gradient(135deg, #1478ff, #5455ee); }
 .tubo-beta-button { background: linear-gradient(135deg, #f3a511, #df6d00); }
 .m3uhub-button { background: linear-gradient(135deg, #00b83f, #008f35); }
+.aptv-copy-button { background: linear-gradient(135deg, #ff315e, #e91f4f); }
+.cartv-copy-button { background: linear-gradient(135deg, #48e86d, #18ba45); }
 
 .button-mark {
   width: 38px;

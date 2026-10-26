@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="description" content="直播源快捷导入，支持途播和 M3UHub">
+  <meta name="description" content="直播源快捷导入，支持途播、M3UHub、APTV 和 CarTV">
   <title>直播源一键导入</title>
-  <link rel="stylesheet" href="styles.css?v=20261024-2">
+  <link rel="stylesheet" href="styles.css?v=20261026-1">
   <style>
     @media (max-width: 700px) {
-      .portal-page .portal-buttons-three { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
-      .portal-page .portal-buttons-three .portal-import { min-width: 0; min-height: 46px; gap: 4px; padding: 0 4px; font-size: 11px; white-space: nowrap; }
-      .portal-page .portal-buttons-three .portal-import img,
-      .portal-page .portal-buttons-three .portal-import b { width: 21px; height: 21px; flex: 0 0 21px; }
+      .portal-page .portal-buttons-five { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 4px; }
+      .portal-page .portal-buttons-five .portal-import { min-width: 0; min-height: 43px; gap: 2px; padding: 0 2px; font-size: 9px; white-space: nowrap; }
+      .portal-page .portal-buttons-five .portal-import img,
+      .portal-page .portal-buttons-five .portal-import b { width: 18px; height: 18px; flex: 0 0 18px; }
     }
   </style>
 </head>
@@ -25,27 +25,27 @@
     <section class="portal-grid" aria-label="直播源列表">
       <article class="portal-card source-card" data-source-name="M3UHub专属源" data-source-url="https://tfapp.cn/subscriptions/dianshijia.m3u">
         <div class="portal-art portal-cover"><span class="portal-badge">M3UHub 专属</span><img src="https://wxqun988.vxjuejin.com/TV%E7%9B%B4%E6%92%AD%E6%BA%90%EF%BC%9A%E7%95%85%E4%BA%AB%E7%B2%BE%E5%BD%A9%E9%A2%91%E9%81%93.png?imageMogr2/thumbnail/900x/format/webp/quality/80" alt="M3UHub 专属直播源" fetchpriority="high"></div>
-        <div class="portal-card-body"><div class="portal-buttons portal-buttons-single"><a class="portal-import m3uhub-button" href="#"><b>▶</b><span>导入 M3UHub 专属源</span></a></div></div>
+        <div class="portal-card-body"><div class="portal-buttons portal-buttons-three"><a class="portal-import m3uhub-button" href="#"><b>▶</b><span>M3UHub</span></a><a class="portal-import aptv-copy-button" href="#"><img src="assets/aptv-icon.jpg" alt=""><span>APTV</span></a><a class="portal-import cartv-copy-button" href="#"><img src="assets/cartv-icon.png" alt=""><span>CarTV</span></a></div></div>
       </article>
       <article class="portal-card source-card" data-source-name="备用直播源" data-source-url="http://47.94.6.170/TV/tv.m3u">
         <div class="portal-art portal-cover"><span class="portal-badge">备用</span><img src="https://wxqun988.vxjuejin.com/52300826c464ec408127fa28460671ed.png?imageMogr2/thumbnail/900x/format/webp/quality/80" alt="直播源"></div>
-        <div class="portal-card-body"><div class="portal-buttons portal-buttons-three"><a class="portal-import tubo-button" href="#"><img src="assets/tubo-icon.png" alt=""><span>途播正式版</span></a><a class="portal-import tubo-beta-button" href="#"><img src="assets/tubo-icon.png" alt=""><span>途播 Beta</span></a><a class="portal-import m3uhub-button" href="#"><b>▶</b><span>M3UHub</span></a></div></div>
+        <div class="portal-card-body"><div class="portal-buttons portal-buttons-five"><a class="portal-import tubo-button" href="#"><img src="assets/tubo-icon.png" alt=""><span>途播</span></a><a class="portal-import tubo-beta-button" href="#"><img src="assets/tubo-icon.png" alt=""><span>Beta</span></a><a class="portal-import m3uhub-button" href="#"><b>▶</b><span>M3UHub</span></a><a class="portal-import aptv-copy-button" href="#"><img src="assets/aptv-icon.jpg" alt=""><span>APTV</span></a><a class="portal-import cartv-copy-button" href="#"><img src="assets/cartv-icon.png" alt=""><span>CarTV</span></a></div></div>
       </article>
       <article class="portal-card source-card" data-source-name="MV源" data-source-url="https://static.tripcngo.com/mv.m3u">
         <div class="portal-art portal-cover"><span class="portal-badge">MV</span><img src="https://wxqun988.vxjuejin.com/7afc7e56b1efc1b463ea8d10f48f86fb.png?imageMogr2/thumbnail/900x/format/webp/quality/80" alt="MV源" loading="lazy"></div>
-        <div class="portal-card-body"><div class="portal-buttons portal-buttons-three"><a class="portal-import tubo-button" href="#"><img src="assets/tubo-icon.png" alt=""><span>途播正式版</span></a><a class="portal-import tubo-beta-button" href="#"><img src="assets/tubo-icon.png" alt=""><span>途播 Beta</span></a><a class="portal-import m3uhub-button" href="#"><b>▶</b><span>M3UHub</span></a></div></div>
+        <div class="portal-card-body"><div class="portal-buttons portal-buttons-five"><a class="portal-import tubo-button" href="#"><img src="assets/tubo-icon.png" alt=""><span>途播</span></a><a class="portal-import tubo-beta-button" href="#"><img src="assets/tubo-icon.png" alt=""><span>Beta</span></a><a class="portal-import m3uhub-button" href="#"><b>▶</b><span>M3UHub</span></a><a class="portal-import aptv-copy-button" href="#"><img src="assets/aptv-icon.jpg" alt=""><span>APTV</span></a><a class="portal-import cartv-copy-button" href="#"><img src="assets/cartv-icon.png" alt=""><span>CarTV</span></a></div></div>
       </article>
       <article class="portal-card source-card" data-source-name="英语儿歌·启蒙动画" data-source-url="https://static.tripcngo.com/index.m3u">
         <div class="portal-art portal-cover"><span class="portal-badge">启蒙</span><img src="https://wxqun988.vxjuejin.com/917c53bfbaaf7618f70ed42c04b86027.png?imageMogr2/thumbnail/900x/format/webp/quality/80" alt="英语儿歌和启蒙动画" loading="lazy"></div>
-        <div class="portal-card-body"><div class="portal-buttons portal-buttons-three"><a class="portal-import tubo-button" href="#"><img src="assets/tubo-icon.png" alt=""><span>途播正式版</span></a><a class="portal-import tubo-beta-button" href="#"><img src="assets/tubo-icon.png" alt=""><span>途播 Beta</span></a><a class="portal-import m3uhub-button" href="#"><b>▶</b><span>M3UHub</span></a></div></div>
+        <div class="portal-card-body"><div class="portal-buttons portal-buttons-five"><a class="portal-import tubo-button" href="#"><img src="assets/tubo-icon.png" alt=""><span>途播</span></a><a class="portal-import tubo-beta-button" href="#"><img src="assets/tubo-icon.png" alt=""><span>Beta</span></a><a class="portal-import m3uhub-button" href="#"><b>▶</b><span>M3UHub</span></a><a class="portal-import aptv-copy-button" href="#"><img src="assets/aptv-icon.jpg" alt=""><span>APTV</span></a><a class="portal-import cartv-copy-button" href="#"><img src="assets/cartv-icon.png" alt=""><span>CarTV</span></a></div></div>
       </article>
       <article class="portal-card source-card" data-source-name="短片源" data-source-url="http://tubo.dypm.top/china-plants/master.m3u">
         <div class="portal-art portal-cover"><span class="portal-badge">短片</span><img src="https://wxqun988.vxjuejin.com/%E7%9F%AD%E7%89%87.png?imageMogr2/thumbnail/900x/format/webp/quality/80" alt="短片源" loading="lazy"></div>
-        <div class="portal-card-body"><div class="portal-buttons portal-buttons-three"><a class="portal-import tubo-button" href="#"><img src="assets/tubo-icon.png" alt=""><span>途播正式版</span></a><a class="portal-import tubo-beta-button" href="#"><img src="assets/tubo-icon.png" alt=""><span>途播 Beta</span></a><a class="portal-import m3uhub-button" href="#"><b>▶</b><span>M3UHub</span></a></div></div>
+        <div class="portal-card-body"><div class="portal-buttons portal-buttons-five"><a class="portal-import tubo-button" href="#"><img src="assets/tubo-icon.png" alt=""><span>途播</span></a><a class="portal-import tubo-beta-button" href="#"><img src="assets/tubo-icon.png" alt=""><span>Beta</span></a><a class="portal-import m3uhub-button" href="#"><b>▶</b><span>M3UHub</span></a><a class="portal-import aptv-copy-button" href="#"><img src="assets/aptv-icon.jpg" alt=""><span>APTV</span></a><a class="portal-import cartv-copy-button" href="#"><img src="assets/cartv-icon.png" alt=""><span>CarTV</span></a></div></div>
       </article>
     </section>
-    <section class="portal-guide"><h2>使用方法</h2><div><span>1</span><p>先在 iPhone 上安装途播或 M3UHub。</p></div><div><span>2</span><p>选择直播源，点击对应 App 的导入按钮。</p></div><div><span>3</span><p>跳转到 App 后确认添加，即可在订阅列表中使用。</p></div></section>
-    <footer class="portal-footer"><p>本站仅提供第三方订阅地址的快捷导入入口，不存储、不转播、不审核直播内容。请确保你有权访问和使用所导入的内容。</p><span>最后更新：2026-10-24</span></footer>
+    <section class="portal-guide"><h2>使用方法</h2><div><span>1</span><p>先在 iPhone 上安装需要使用的播放器。</p></div><div><span>2</span><p>途播和 M3UHub 可一键导入；APTV、CarTV 点击后复制链接。</p></div><div><span>3</span><p>进入对应 App 粘贴或确认添加，即可使用订阅源。</p></div></section>
+    <footer class="portal-footer"><p>本站仅提供第三方订阅地址的快捷导入入口，不存储、不转播、不审核直播内容。请确保你有权访问和使用所导入的内容。</p><span>最后更新：2026-10-26</span></footer>
   </main>
   <button class="portal-refresh" type="button" aria-label="刷新页面" onclick="location.reload()">↻</button>
   <div class="browser-warning" id="browser-warning" hidden>
